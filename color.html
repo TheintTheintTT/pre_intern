@@ -7,9 +7,9 @@
  
 document.querySelector('#select')=function mySelect(){
 
-                document.querySelector('#black')=function(button){
-                    button.onclick = function(){
-                        document.querySelector('#hello').style.color = button.dataset.color;
+                document.querySelector('#black')=function(option){
+                    option.onclick = function(){
+                        document.querySelector('#hello').style.color = option.dataset.color;
                     };
                 };
                 document.querySelector('#red')=function(button){
@@ -37,7 +37,7 @@ document.querySelector('#select')=function mySelect(){
     <body>
         <h1 id="hello">Hello!Welcome to Our PreIntern Group.</h1>
         <select id="select" onclick="mySelect()">
-        <option><button id="black" data-color="black">Black</button></option>
+        <option id="black" data-color="black">Black</option>
         <option><button id="red" data-color="red">Red</button></option>
         <option><button id="green" data-color="green">Green</button></option>
         <option><button id="blue" data-color="blue">Blue</button></option>
