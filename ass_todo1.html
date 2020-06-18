@@ -7,7 +7,6 @@
                 var c=document.getElementById('submit');
                 if(txt.value != ''){
                     c.disabled = false;
-
                 }
                 else{
                     c.disabled = true;
@@ -22,7 +21,7 @@
                 var t=document.createTextNode(inputValue);
                 li.appendChild(t);
                 if (inputValue ===''){
-                    document.getElementById('submit').disabled=false;
+                    document.getElementById('submit').disabled=true;
                 }
                 else{
                     document.getElementById('list').appendChild(li);
